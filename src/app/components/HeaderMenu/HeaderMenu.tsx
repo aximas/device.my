@@ -29,6 +29,14 @@ const menuData = [
     {
         url: '/vibrate',
         name: 'Vibrate'
+    },
+    {
+        url: '/battery',
+        name: 'Battery'
+    },
+    {
+        url: '/light',
+        name: 'Light'
     }
 ]
 
