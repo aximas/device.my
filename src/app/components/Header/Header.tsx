@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import HeaderMenu from '@/app/components/HeaderMenu/HeaderMenu'
+import HeaderMenu from '@//components/HeaderMenu/HeaderMenu'
 
 const Header = () => {
     return <header>
