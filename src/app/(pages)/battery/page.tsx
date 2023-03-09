@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from 'react'
 import styles from './battery.module.scss'
+import {Timer} from '@//components/Timer/Timer'
 
 const Battery = () => {
     const [isCharging, setIsCharging] = useState(false)
@@ -83,11 +84,11 @@ const Battery = () => {
             </div>
             <div>
                 <dt>Charging time:</dt>
-                <dd>{chargingTime} seconds</dd>
+                <dd>{chargingTime && isFinite(chargingTime) ? <Timer sec={chargingTime}/> : 'not access'}</dd>
             </div>
             <div>
                 <dt>Discharging device:</dt>
-                <dd>{dischargingTime} seconds</dd>
+                <dd>{dischargingTime && isFinite(dischargingTime) ? <Timer sec={dischargingTime}/> : 'not access'}</dd>
             </div>
         </dl>
     </div>
