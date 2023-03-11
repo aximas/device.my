@@ -37,6 +37,10 @@ const menuData = [
     {
         url: '/light',
         name: 'Light'
+    },
+    {
+        url: '/proximity',
+        name: 'Proximity'
     }
 ]
 

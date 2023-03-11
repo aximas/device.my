@@ -1,7 +1,6 @@
 'use client';
 
 import {useEffect, useState} from 'react'
-import styles from './battery.module.scss'
 import {Timer} from '@//components/Timer/Timer'
 
 const Battery = () => {
@@ -71,9 +70,9 @@ const Battery = () => {
         }
     }, [])
 
-    return <div className={styles.batteryWrapper}>
+    return <div>
         <h3>Battery Info</h3>
-        <dl className={styles.batteryDetails}>
+        <dl>
             <div>
                 <dt>Your device:</dt>
                 <dd>{isCharging || 'not'} charging</dd>
